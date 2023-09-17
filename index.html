@@ -1,6 +1,66 @@
-<!-- Kitten image URL -->
-https://raw.githubusercontent.com/appbrewery/webdev/main/kitten.jpeg
+<head>
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
 
 
-<!-- Puppy image URL -->
-https://raw.githubusercontent.com/appbrewery/webdev/main/puppy.gif
+<div class="titulo">
+    <h1>🎂Aniversario Yumi🎂</h1>
+    <div class="yumi"> 
+    <img src="./Yumi/Yumi.gif">
+    </div>
+    <div class="gif-container">
+        <img src="./4boX.gif"> 
+        <div class="espacio">
+            <h2>23 de setembro de 2023</h2>
+            <h3 style="text-align: center;">Confirme sua presença!</h1>
+            <table>
+                <tr>
+                  <td>Nome</td>
+                  <td><input type="text" placeholder="Nome"></td>
+                </tr>
+                <tr>
+                  <td>Telefone</td>
+                  <td><input type="text" placeholder="+343 8xx xxx xxx"></td>
+                </tr>
+              </table>
+        
+<button>Enviar</button>
+        </div>
+        
+        <img src="./SO5X.gif">
+    
+    </div>
+    
+    
+    
+</div>
+
+
+
+
+<div class="countdown" id="countdown"></div>
+    
+    <script>
+            // Fecha objetivo (puedes personalizarla)
+            var targetDate = new Date("2023-09-23 00:00:00").getTime();
+    
+            // Actualizar el reloj cada segundo
+            var countdownInterval = setInterval(function() {
+                var currentDate = new Date().getTime();
+                var timeRemaining = targetDate - currentDate;
+    
+                if (timeRemaining <= 0) {
+                    clearInterval(countdownInterval);
+                    document.getElementById("countdown").innerHTML = "¡Feliz Año Nuevo!";
+                } else {
+                    var days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
+                    var hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                    var minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
+                    var seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+    
+                    var countdownText = days + "d " + hours + "h " + minutes + "m " + seconds + "s";
+                    document.getElementById("countdown").innerHTML = countdownText;
+                }
+            }, 1000); // Actualizar cada segundo
+        </script>
+    
