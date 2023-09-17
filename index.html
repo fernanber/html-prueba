@@ -1,43 +1,64 @@
 <head>
-    <title>Aniversario Yumi</title>
-    <style>
-        .countdown {
-            font-size: 24px;
-            font-weight: bold;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="estilo.css">
 </head>
-<body>
-<h1>Aniversario Yumi</h1>
-<img src="./Yumi.gif">
-<h2>23 de setembro de 2023</h2>
-<h3>Não se esqueça de confirmar a sua presença</h3>
-<h1><a href="https://www.google.com/maps/@35.7040744,139.5577317,3a,75y,290.66h,74.25t/data=!3m6!1e1!3m4!1sgT28ssf0BB2LxZ63JNcL1w!2e0!7i13312!8i6656">Confirme</a></h1>
 
-<head>
-    <div class="countdown" id="countdown"></div>
 
+<div class="titulo">
+    <h1>🎂Aniversario Yumi🎂</h1>
+    <div class="yumi"> 
+    <img src="./Yumi.gif">
+    </div>
+    <div class="gif-container">
+        <img src="./4boX.gif"> 
+        <div class="espacio">
+            <h2>23 de setembro de 2023</h2>
+            <h3 style="text-align: center;">Confirme sua presença!</h1>
+            <table>
+                <tr>
+                  <td>Nome</td>
+                  <td><input type="text" placeholder="Nome"></td>
+                </tr>
+                <tr>
+                  <td>Telefone</td>
+                  <td><input type="text" placeholder="+343 8xx xxx xxx"></td>
+                </tr>
+              </table>
+        
+<button>Enviar</button>
+        </div>
+        
+        <img src="./SO5X.gif">
+    
+    </div>
+    
+    
+    
+</div>
+
+
+<div class="countdown" id="countdown"></div>
+    
     <script>
-        // Fecha objetivo (puedes personalizarla)
-        var targetDate = new Date("2023-09-23 00:00:00").getTime();
-
-        // Actualizar el reloj cada segundo
-        var countdownInterval = setInterval(function() {
-            var currentDate = new Date().getTime();
-            var timeRemaining = targetDate - currentDate;
-
-            if (timeRemaining <= 0) {
-                clearInterval(countdownInterval);
-                document.getElementById("countdown").innerHTML = "¡Feliz Año Nuevo!";
-            } else {
-                var days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
-                var hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                var minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
-                var seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
-
-                var countdownText = days + "d " + hours + "h " + minutes + "m " + seconds + "s";
-                document.getElementById("countdown").innerHTML = countdownText;
-            }
-        }, 1000); // Actualizar cada segundo
-    </script>
-</body>
+            // Fecha objetivo (puedes personalizarla)
+            var targetDate = new Date("2023-09-23 00:00:00").getTime();
+    
+            // Actualizar el reloj cada segundo
+            var countdownInterval = setInterval(function() {
+                var currentDate = new Date().getTime();
+                var timeRemaining = targetDate - currentDate;
+    
+                if (timeRemaining <= 0) {
+                    clearInterval(countdownInterval);
+                    document.getElementById("countdown").innerHTML = "¡Feliz Año Nuevo!";
+                } else {
+                    var days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
+                    var hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                    var minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
+                    var seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+    
+                    var countdownText = days + "d " + hours + "h " + minutes + "m " + seconds + "s";
+                    document.getElementById("countdown").innerHTML = countdownText;
+                }
+            }, 1000); // Actualizar cada segundo
+        </script>
+    
