@@ -1,0 +1,62 @@
+
+.gif-container {
+    display: flex;
+    align-items: center;
+    width: 200;
+}
+
+.gif-container img {
+   
+    width: 200px;
+    
+}
+
+.titulo h1{
+    text-align: center;
+    text-decoration:solid;
+}
+
+
+.yumi {
+    width: 200px;
+}
+.yumi img{
+    width: 700
+}
+
+.espacio{
+    margin-left: 25;
+    margin-right: 25;
+}
+.espacio h2 {
+
+    text-align: center;
+    font-size: 25;
+    white-space: nowrap;
+    
+}
+
+.espacio button {
+    margin-top: 15;
+}
+
+
+.form {
+    font-size:15;
+    color: black;
+    font-weight: bold;
+    height: -5;
+    width: -5;
+    text-align: center;
+}
+
+.countdown {
+    color: green;
+    font-size: 35;
+    font-weight: bold;
+    margin: 35;
+    width: auto;
+    border: 10px solid purple;
+    padding: 35px;
+    text-align: center;
+}
