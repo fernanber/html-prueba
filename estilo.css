@@ -21,7 +21,10 @@
     width: 200px;
 }
 .yumi img{
-    width: 700
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .espacio{
